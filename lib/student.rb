@@ -56,7 +56,6 @@ class Student
       self.new_from_db(row)
       num -= 1
     end
-    
   end
 
   def self.find_by_name(name)
