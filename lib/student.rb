@@ -55,7 +55,7 @@ class Student
       while num > 0
       self.new_from_db(row)
       num -= 1
-    end
+      end
     end
   end
 
