@@ -53,8 +53,9 @@ class Student
     
     while num > 0
     DB[:conn].execute(sql).map do |row|
+      
       self.new_from_db(row)
-      num = num - 1
+      num -= 1
       end
     end
   end
