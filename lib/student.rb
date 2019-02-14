@@ -51,9 +51,9 @@ class Student
       WHERE grade = 10
     SQL
     
-    while num > 0
+    
     DB[:conn].execute(sql).map do |row|
-      
+      while num > 0
       self.new_from_db(row)
       num -= 1
       end
